@@ -5,9 +5,14 @@
 
 - Fonts weights:
 Default: 400
+Medium: 500
+Semibold: 600
+Bold: 700
 
 - Line heights:
 Defualt: 1
+Small: 1.05
+Paragraph Deafult: 1.6
 
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
@@ -29,6 +34,7 @@ uifaces.co
 --- 03. SHADOWS
 
 --- 04. BORDER-RADIUS
+Default: 9px
 
 --- 05. WHITESPACES
 - Spacing System (px)
@@ -133,6 +139,46 @@ body {
 
 .logo {
   height: 2.2rem;
+}
+
+/*****************************************/
+/* NAVIGATION */
+/*****************************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.nav-cta:visited {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /*****************************************/
